@@ -11,9 +11,6 @@
     </head>
     <body>
         <main>
-            <?php
-                require_once('templates/alert.php');
-            ?>
             <div class="login">
                 <form action="login.php" class="login-form" method="POST">
                     <h1 class="texto-centrado">Iniciar sesión</h1>
