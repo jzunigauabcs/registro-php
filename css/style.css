@@ -1,0 +1,80 @@
+:root {
+    --primary-color: #017C89;
+    --secondary-color: #127883;
+    --hover-color: #0c4f56;
+    --error-color: #dc3545;
+    --success-color: #0d6efd;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: 'Lato', sans-serif;
+}
+
+.login {
+    background-color: #FFFFFF;
+    border-radius: 7px;
+    padding: 30px;
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 500px;
+}
+
+.fila {
+    margin-bottom: 16px;
+}
+
+.form-control {
+    background-color: #eeeeee;
+    border: 0;
+    display: block;
+    outline-color: #4260e7;
+    padding: 8px 15px;
+    width: 100%;
+}
+
+.btn {
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    border-radius: 6px;
+    padding: 8px 15px;
+    border: none;
+}
+
+.btn:hover {
+    background-color: var(--hover-color);
+    cursor: pointer;
+}
+.texto-centrado {
+    text-align: center;
+}
+
+.link {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.input-error {
+    border: 2px solid red;
+    outline-color: red;
+}
+
+.alert {
+    width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: white;
+    border-radius:  7px;
+}
+
+.alert-error {
+    background-color: var(--error-color);
+    color: white;
+}
+.alert-success {
+    background-color: var(--success-color);
+    color: white;
+}
