@@ -13,7 +13,7 @@ class Database {
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             return $pdo;
         } catch(PDOException $e) {
-            die("Ocurrió un error al intentar la conexión en la base de dato " . $e->getMessage);
+            die("Ocurrió un error al intentar la conexión en la base de dato " . $e->getMessage());
         }
     }
 }
