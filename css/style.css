@@ -2,8 +2,9 @@
     --primary-color: #017C89;
     --secondary-color: #127883;
     --hover-color: #0c4f56;
-    --error-color: #dc3545;
-    --success-color: #0d6efd;
+    --error-color: #f8d7da;
+    --success-color: #d1e7dd;
+    --warning-color: #fff3cd;
 }
 * {
     box-sizing: border-box;
@@ -12,15 +13,25 @@
 body {
     background-color: var(--primary-color);
     font-family: 'Lato', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.login {
+label {
+    margin-bottom: 4px;
+    display: inline-block;
+}
+
+.form-container {
     background-color: #FFFFFF;
     border-radius: 7px;
     padding: 30px;
+}
+
+.login {
+    width: 500px;
     margin: 0 auto;
     margin-top: 40px;
-    width: 500px;
 }
 
 .fila {
@@ -63,7 +74,8 @@ body {
 }
 
 .alert {
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     margin: 0 auto;
     padding: 30px;
     background-color: white;
@@ -72,9 +84,33 @@ body {
 
 .alert-error {
     background-color: var(--error-color);
-    color: white;
+    color: #842029;
+    border: 1px solid #f5c2c7;
 }
 .alert-success {
     background-color: var(--success-color);
-    color: white;
+    color: #0f5132;
+    border: 1px solid #badbcc;
+}
+.alert-warning {
+    background-color: var(--warning-color);
+    color: #664d03;
+    border: 1px solid #ffecb5;
+}
+.alert-float {
+    position: absolute;
+    z-index: 100;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.app-mensajes {
+    width: 450px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+#map {
+    width: 100%;
+    height: 100vh;
 }

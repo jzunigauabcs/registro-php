@@ -11,7 +11,7 @@
 </head>
 <body>
 	<main>
-		<div class="login">
+		<div class="login form-container">
 			<form action="register_user.php" class="login-form" method="POST">
 				<h1 class="texto-centrado">Crear cuenta</h1>
 				<div class="fila">
