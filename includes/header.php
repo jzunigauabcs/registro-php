@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.8.0/mapbox-gl.js"></script>
 
-    <title>Iniciar sesión</title>
+    <title>Aplicación</title>
 </head>
 <body>
 <main>

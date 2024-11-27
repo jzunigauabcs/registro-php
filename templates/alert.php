@@ -19,7 +19,12 @@ switch($status) {
     default:
         $alert_type = '';
 }
-    $alert_msg = $messages[$status];
+$alert_msg = $messages[$status];
+
+if(isset($alert_float)) {
+    $alert_type = sprintf("%s %s", $alert_type, $alert_float);
+
+}
 ?>
 
 <div class="alert alert-<?php echo $alert_type; ?>">
